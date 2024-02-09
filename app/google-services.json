@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "480041226241",
+    "firebase_url": "https://carshot-2011e-default-rtdb.firebaseio.com",
+    "project_id": "carshot-2011e",
+    "storage_bucket": "carshot-2011e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480041226241:android:f0018cf74d439adfbaf000",
+        "android_client_info": {
+          "package_name": "com.example.project4thsem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480041226241-k4s7aunvgcinm7ckghpst6d89uk5p0k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ035k0MDVzGs5PvO72pvuLflvk8JXD3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480041226241-k4s7aunvgcinm7ckghpst6d89uk5p0k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

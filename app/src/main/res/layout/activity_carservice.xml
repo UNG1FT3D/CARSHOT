@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/washbackground"
+    tools:context=".Carservice">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Proceed"
+        android:layout_alignBottom="@+id/Home"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/navigation" />
+
+    <ImageView
+        android:id="@+id/Home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Proceed"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="52dp"
+        android:src="@drawable/home_24" />
+
+
+    <ImageView
+        android:id="@+id/Profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Proceed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="52dp"
+        android:src="@drawable/account" />
+
+    <EditText
+        android:id="@+id/Edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Proceed"
+        android:alpha="0"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/UserLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/account"
+        android:layout_below="@+id/Proceed"
+        android:text="Name" />
+
+
+
+    <ImageView
+        android:id="@+id/moveback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/moveback" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moveback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Car Service"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkboxlayout"
+        android:layout_centerInParent="true">
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <RadioButton
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:layout_marginLeft="50dp"
+                android:text="Basic"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:text="(Only Service)"
+                android:textSize="16dp"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/checkbox"
+                android:fontFamily="@font/baloo"
+                android:text="Advance"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text="(Service with Wheel Greasing)"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox1"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/baloo"
+                android:text="Premium"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="(Service with Wheel Greasing and full mechanical checkup )"
+                android:textSize="16dp"
+                />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/Proceed"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxlayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginRight="149dp"
+        android:fontFamily="@font/baloo"
+        android:text="Proceed"
+        app:backgroundTint="#CC4747"
+        app:rippleColor="#E3E0E0" />
+
+
+</RelativeLayout>

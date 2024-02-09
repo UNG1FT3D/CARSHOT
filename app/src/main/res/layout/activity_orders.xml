@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders">
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/history12"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="History"
+        app:backgroundTint="#CC4747"
+        app:rippleColor="#E3E0E0" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/Home"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Home"
+        app:backgroundTint="#CC4747"
+        app:rippleColor="#E3E0E0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Home"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/tick" />
+
+    <TextView
+        android:id="@+id/ordertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/backgroundbox"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cashPerson"
+        android:text="Please Pay Cash To Our Service Person"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ordertextView"/>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cashPerson"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:background="@drawable/thanku"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/logout"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:text="Logout"
+        app:backgroundTint="#CC4747"
+        app:rippleColor="#E3E0E0" />
+
+
+
+</RelativeLayout>

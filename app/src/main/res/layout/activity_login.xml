@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aback1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/sigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="115dp"
+        android:fontFamily="@font/baloo"
+        android:text="LogIn"
+        android:textAlignment="center"
+        android:textColor="#FFCB2E"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sigin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/account"
+        android:fontFamily="@font/baloo"
+        android:hint="Username"
+        android:padding="20dp" />
+
+    <EditText
+
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/pass"
+        android:fontFamily="@font/baloo"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/login"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="Login"
+        app:backgroundTint="#CC4747"
+        app:rippleColor="#E3E0E0" />
+
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="174dp"
+        android:fontFamily="@font/baloo"
+        android:text="Forgot password?"
+        android:textAlignment="center"
+        android:textColor="#FBF8F8"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/baloo"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FBF8F8"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/forgot"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="170dp"
+        android:src="@drawable/glogo" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/forgot"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="140dp"
+        android:src="@drawable/fblogo" />
+
+
+</RelativeLayout>
